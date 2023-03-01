@@ -27,7 +27,10 @@ class BmiViewModel: ViewModel() {
     fun changeWeightInput(value:String){
         weightInput=value
     }
-
+    //- Add member variable for result (bmi)
+    //- Add private method for calculation where you convert input into numbers and
+    //calculate result
+    //- Call private method doing calculation when returning value for bmi
     fun bmi(): Float{
         return if(weight>0 && height>0) weight/(height*height) else 0.0f
     }
